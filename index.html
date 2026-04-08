@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Thin Places Daily</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07110f;
+      --panel: #101917;
+      --ink: #f2ebe1;
+      --muted: #c7b7a6;
+      --accent: #d18c55;
+    }
+    body {
+      margin: 0;
+      font-family: Georgia, serif;
+      background:
+        radial-gradient(circle at 50% 20%, rgba(209, 140, 85, 0.24), transparent 33%),
+        linear-gradient(180deg, #07110f, #101917 55%, #0d1112);
+      color: var(--ink);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+    main {
+      width: min(780px, calc(100vw - 48px));
+      padding: 40px;
+      border-radius: 28px;
+      background: rgba(16, 25, 23, 0.82);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+    }
+    h1 {
+      margin-top: 0;
+      font-size: clamp(2.6rem, 6vw, 5rem);
+      line-height: 0.95;
+    }
+    p {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.65;
+    }
+    a { color: var(--ink); }
+    code {
+      display: block;
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Thin Places Daily</h1>
+    <p>A daily paranormal feed built around intimate witness accounts, local folklore, and the details that still refuse to fit.</p>
+    <p>RSS feed:</p>
+    <code>https://JeffB823.github.io/thin-places-daily-feed/feed.xml</code>
+    <p><a href="podcast://JeffB823.github.io/thin-places-daily-feed/feed.xml">Open in Apple Podcasts</a></p>
+  </main>
+</body>
+</html>
